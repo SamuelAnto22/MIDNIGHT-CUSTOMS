@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLA Panamericana — Mercedes GLA AMG Build | Midnight Customs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/proyecto-nightwalker.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+</head>
+
+<body>
+
+    <a href="#contenido-principal" class="saltar-enlace"
+        style="position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:8px;z-index:2000;">
+        Saltar al contenido
+    </a>
+
+    <header class="cabecera-principal">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon-Photoroom.png" alt="Logotipo de Midnight Customs">
+                <span style="color:var(--color1);margin-right:5px;">Midnight</span><span
+                    style="color:var(--color2);">Customs</span>
+            </a>
+        </div>
+        <button class="boton-menu">☰</button>
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyectos.html" class="activo">Proyectos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <div class="contenedor-carga" id="loader">
+            <div class="girador-neon"></div>
+            <p>CARGANDO SISTEMAS...</p>
+        </div>
+
+        <!-- CABECERA DEL PROYECTO (Título y tal) -->
+        <div class="proyecto-cabecera">
+            <h1>GLA Panamericana</h1>
+            <p class="proyecto-subtitulo">Mercedes GLA 200CDI · Full AMG Build · Midnight Customs</p>
+        </div>
+
+        <!-- CARRUSEL DE FOTOS (He metido un montón de fotos para que se vea bien el curro) -->
+        <div class="carrusel-proyecto">
+            <div class="carrusel-ventana" id="carruselVentana">
+                <div class="carrusel-diapositiva activa">
+                    <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-loren-lip-delantero-maxton-min.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-loren-1-min-576x1024.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-l-min-576x1024.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-loren_-min-576x1024.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-loren-difusor-traseo-min.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-loren-min-576x1024.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-loren-interior-min-576x1024.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2025/09/llantas-fondmetal-FMI-AIDON-GB-a-1024x1024.webp"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <button class="carrusel-btn anterior" id="btnAnterior">&#8249;</button>
+                <button class="carrusel-btn siguiente" id="btnSiguiente">&#8250;</button>
+            </div>
+            <div class="carrusel-indicadores" id="carruselIndicadores"></div>
+            <div class="carrusel-miniaturas" id="carruselMiniaturas">
+                <img class="activa"
+                    src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-loren-lip-delantero-maxton-min.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-loren-1-min-576x1024.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-l-min-576x1024.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-loren_-min-576x1024.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-loren-difusor-traseo-min.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-gla-loren-min-576x1024.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2025/09/mercedes-loren-interior-min-576x1024.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2025/09/llantas-fondmetal-FMI-AIDON-GB-a-1024x1024.webp"
+                    alt="Fotografía detallada del coche modificado en el taller">
+            </div>
+        </div>
+
+        <!-- CUERPO -->
+        <div class="proyecto-cuerpo">
+
+            <!-- EL TEXTO TOCHO EXPLICANDO LO QUE LE HICIMOS AL COCHE -->
+            <div class="proyecto-descripcion">
+                <h2>Visión del proyecto</h2>
+                <p>
+                    Un Mercedes GLA 200CDI AMG Line llegó a Midnight Customs con la postura discreta de un SUV premium
+                    de ciudad. Salió con la actitud de un depredador. El objetivo era claro desde el principio:
+                    convertirlo en el GLA que AMG nunca se atrevió a construir en serie —pero que nosotros sí.
+                </p>
+                <p>
+                    Sin compromisos estéticos, sin piezas de catálogo a medias. Cada modificación fue pensada para que
+                    encajara con la siguiente, construyendo un conjunto donde nada desentona y todo tiene una razón de
+                    ser. El resultado es un GLA que parece salido directamente de un stand de Frankfurt... de noche.
+                </p>
+
+                <h3>Modificaciones realizadas</h3>
+                <ul class="lista-mods">
+                    <li>
+                        <strong>Suspensión KW V1 (coilovers):</strong>
+                        Sustitución completa de la suspensión de serie. El kit KW V1 permite ajustar la altura de forma
+                        precisa, bajando el centro de gravedad para una postura más agresiva y reduciendo el balanceo en
+                        curvas sin comprometer la conducción en ciudad.
+                    </li>
+                    <li>
+                        <strong>Llantas Fondmetal Aidon Glossy Black 20×8.5" + neumáticos Nankang SP9 235/40
+                            ZR20:</strong>
+                        Diseño multirradio italiano en negro brillante. Las Aidon fueron concebidas con el ADN Mercedes
+                        en mente: el labio maquinado y el negro brillo del barrilote destacan las pinzas de freno
+                        rojas al fondo. Neumáticos de alto rendimiento con compuesto de sílice para agarre óptimo en
+                        seco y mojado.
+                    </li>
+                    <li>
+                        <strong>Separadores 16 mm (delante) y 21 mm (detrás) + pasos de rueda modificados:</strong>
+                        Ensanche de la vía para que las llantas queden al ras de la carrocería. Los pasos de rueda
+                        fueron recortados y abiertos artesanalmente para eliminar cualquier roce sin alterar las líneas
+                        originales del coche.
+                    </li>
+                    <li>
+                        <strong>Paragolpes delantero y trasero 45 AMG:</strong>
+                        Los mismos bumpers OEM de la versión AMG GLA 45. El frontal gana entradas de aire más grandes y
+                        una expresión intimidante; la trasera se ensancha en la parte baja y deja espacio al difusor.
+                    </li>
+                    <li>
+                        <strong>Parrilla AMG GT Panamericana en negro brillo:</strong>
+                        Lamas verticales características del AMG GT R. Instalada con el logo de la estrella en negro y
+                        retroiluminado. El frontal resultante parece sacado de un GT de competición.
+                    </li>
+                    <li>
+                        <strong>Lip delantero + lips laterales Maxton Design (negro brillo):</strong>
+                        El lip inferior recorre todo el paragolpes delantero, aumentando la carga aerodinámica y
+                        haciendo que el coche parezca aún más pegado al asfalto. Las taloneras Maxton conectan
+                        visualmente el frontal con el difusor trasero desde el lateral.
+                    </li>
+                    <li>
+                        <strong>Capó de fibra de carbono con entradas de aire funcionales:</strong>
+                        Más ligero que el acero original y visualmente impactante. El tejido de carbono bajo barniz
+                        contrasta con el gris satinado de la carrocería y aporta ventilación activa al compartimento
+                        motor.
+                    </li>
+                    <li>
+                        <strong>Difusor trasero artesanal en negro brillo con luz estilo F1:</strong>
+                        Fabricado a mano tras recibir una pieza defectuosa de fábrica. Moldeado en fibra de vidrio,
+                        reparado, ajustado a la perfección y pintado en negro brillo. Como toque de competición:
+                        luz roja central estilo Fórmula 1 que funciona como luz de freno y antiniebla trasero.
+                    </li>
+                    <li>
+                        <strong>Salidas de escape dobles 91 mm en carbono:</strong>
+                        Remate de la trasera con dos colas en carbono que ocupan los huecos del difusor AMG. Estética
+                        de cuatro tubos sin intervenir en el motor (decisión correcta en diésel para no aumentar el
+                        ruido interno del habitáculo).
+                    </li>
+                    <li>
+                        <strong>Alerón trasero 45 AMG en negro brillo:</strong>
+                        Spoiler de techo específico del GLA 45. Mayor superficie y pendiente que el alerón discreto de
+                        serie, mejora la estabilidad a alta velocidad y proclama la identidad AMG desde la distancia.
+                    </li>
+                    <li>
+                        <strong>Techo vinilado negro + detalles en negro brillo:</strong>
+                        Retrovisores, molduras, logos y acabados interiores llevados a negro para formar una paleta
+                        oscura y coherente en todo el conjunto. Ribete rojo fino en ciertos accesorios Maxton como
+                        contrapunto cromático.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- COLUMNA DE LA DERECHA (Presupuesto y esas cosas que duelen al bolsillo) -->
+            <div class="columna-lateral">
+
+                <div class="tarjeta-ficha">
+                    <h3>Ficha técnica</h3>
+                    <div class="ficha-dato">
+                        <span>Vehículo base</span>
+                        <span>Mercedes GLA 200CDI</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Versión de serie</span>
+                        <span>AMG Line</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Motor</span>
+                        <span>2.2 CDI (diésel)</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Llantas</span>
+                        <span>Fondmetal Aidon 20"</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Tipo de proyecto</span>
+                        <span>Estético + Suspensión</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Estado</span>
+                        <span style="color:var(--color2);">Finalizado</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-presupuesto">
+                    <h3>Presupuesto del proyecto</h3>
+
+                    <div class="fila-presupuesto">
+                        <span>Suspensión KW V1 coilovers (kit + instalación)</span>
+                        <span>2.800 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Llantas Fondmetal Aidon 20" + neumáticos Nankang SP9</span>
+                        <span>2.400 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Separadores + pasos de rueda artesanales</span>
+                        <span>550 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Paragolpes 45 AMG delantero + trasero (OEM)</span>
+                        <span>1.800 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Parrilla AMG GT Panamericana negro brillo</span>
+                        <span>420 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Lip + taloneras Maxton Design (negro brillo)</span>
+                        <span>680 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Capó de carbono con entradas de aire</span>
+                        <span>1.900 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Difusor artesanal + luz F1 + escape carbono</span>
+                        <span>1.200 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Alerón 45 AMG + techo vinilado + detalles negro</span>
+                        <span>750 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Mano de obra y ajustes finales</span>
+                        <span>1.600 €</span>
+                    </div>
+
+                    <div class="fila-total">
+                        <span>Total estimado</span>
+                        <span>14.100 €</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BOTONONES REDONDOS AL FINAL (Call to action se llaman) -->
+        <div class="proyecto-cta">
+            <a href="proyectos.html" class="boton-neon boton-secundario">← Volver a proyectos</a>
+            <a href="contacto.html" class="boton-neon">Solicitar presupuesto similar</a>
+        </div>
+    </main>
+
+
+    <script src="js/pie-pagina.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/proyecto-nightwalker.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios | Midnight Customs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+</head>
+
+<body>
+
+    <a href="#contenido-principal" class="saltar-enlace"
+        style="position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 2000;">Saltar
+        al contenido</a>
+
+    <header class="cabecera-principal">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon-Photoroom.png" alt="Logotipo de Midnight Customs">
+                <span style="color:var(--color1); margin-right: 5px;">Midnight</span><span
+                    style="color:var(--color2);">Customs</span>
+            </a>
+        </div>
+
+        <button class="boton-menu">
+            ☰
+        </button>
+
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html" class="activo">Servicios</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <!-- PANTALLA DE CARGA (El pantallazo negro antes de entrar) -->
+        <div class="contenedor-carga" id="loader">
+            <div class="girador-neon"></div>
+            <p>CARGANDO SISTEMAS...</p>
+        </div>
+
+        <section class="pagina-servicios">
+            <div class="titulo-seccion">
+                <h1 id="titulo-servicios">Nuestros Servicios</h1>
+            </div>
+
+            <div class="lista-servicios">
+
+                <!-- 1. El primer servicio que ofrecemos: Vinilos y pintura loca -->
+                <article id="vinilado" class="tarjeta-servicio tarjeta-cristal">
+                    <div class="imagen-servicio">
+                        <img src="https://www.areagraficadigital.es/images/galeria/o_1i1nc183j15sh32nhtk1bstboi1b.jpg"
+                            alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    </div>
+                    <div class="info-servicio">
+                        <h2>Vinilado y Pintura Especial</h2>
+                        <p>Transformamos por completo el aspecto exterior de tu vehículo. Tanto si buscas el negro mate
+                            absoluto, un acabado cromo brillante o pinturas nacaradas, preparamos la carrocería con
+                            acabados inigualables para impresionar en la noche.</p>
+                        <ul>
+                            <li>
+                                <span class="etiqueta-precio">800 € – 1.500 €</span>
+                                <strong>Wrapping completo o parcial:</strong>
+                                Materiales premium (3M, Avery) resistentes y reversibles.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">1.400 € – 3.800 €</span>
+                                <strong>Pinturas reactivas a UV:</strong>
+                                Tonalidades fluorescentes y fotoluminiscentes que cobran vida con luz oscura.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">650 € – 1.200 €</span>
+                                <strong>Detallado y PPF:</strong>
+                                Film de protección transparente de máxima resistencia contra el asfalto.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- 2. Servicio de darle caña al motor (repros, escapes y demás) -->
+                <article id="motor" class="tarjeta-servicio tarjeta-cristal">
+                    <div class="imagen-servicio">
+                        <img src="https://cdn-s3.clubcorsavenezuela.com/original/2X/2/27e2b4d98a789cc7977b870dec0270fba0228314.jpeg"
+                            alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    </div>
+                    <div class="info-servicio">
+                        <h2>Potenciación y Rendimiento</h2>
+                        <p>No todo es imagen. Tu máquina necesita rugir y quemar asfalto de verdad. Intervenimos
+                            directamente en el corazón de tu vehículo con mejoras cuantificables para circuito y
+                            exhibición.</p>
+                        <ul>
+                            <li>
+                                <span class="etiqueta-precio">350 € – 900 €</span>
+                                <strong>Reprogramación ECU (Stage 1, 2 y 3):</strong>
+                                Aumentamos caballos y par motor optimizando los mapas de inyección.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">1.200 € – 5.000 €</span>
+                                <strong>Sistemas de escape custom:</strong>
+                                Escapes en titanio, downpipes y líneas preparadas para llamas y pop &amp; bangs
+                                controlados (Valvetronic).
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">200 € – 3.500 €</span>
+                                <strong>Admisiones y turbos:</strong>
+                                Turbinas híbridas, intercoolers frontales y filtros de alto flujo.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- 3. Para bajar el coche y que roce el suelo (Neumática y forjadas) -->
+                <article id="llantas" class="tarjeta-servicio tarjeta-cristal">
+                    <div class="imagen-servicio">
+                        <img src="https://i.pinimg.com/736x/15/1a/81/151a819607a890b1aaa6b0c41cce7d92.jpg"
+                            alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    </div>
+                    <div class="info-servicio">
+                        <h2>Llantas y Suspensión (Fitment)</h2>
+                        <p>Conseguimos el encaje perfecto. Desde un fitment agresivo tipo stance hasta setups anchos
+                            diseñados para agarre en circuito rápido, ninguna postura se nos resiste.</p>
+                        <ul>
+                            <li>
+                                <span class="etiqueta-precio">1.800 € – 4.500 €</span>
+                                <strong>Suspensión neumática (Airride):</strong>
+                                Control total de la altura por Bluetooth para aparcar a ras de suelo.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">800 € – 6.000 €</span>
+                                <strong>Llantas multipieza &amp; custom:</strong>
+                                Rotiform, BBS, Work y forjadas a medida pintadas al horno del color que quieras.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">150 € – 400 €</span>
+                                <strong>Geometría y separadores:</strong>
+                                Caídas ajustadas y bujes a medida.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- 4. Ponerle ensanches al coche, alerones y chapa cortada -->
+                <article id="bodykits" class="tarjeta-servicio tarjeta-cristal">
+                    <div class="imagen-servicio">
+                        <img src="https://img.interempresas.net/fotos/2086977.jpeg"
+                            alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    </div>
+                    <div class="info-servicio">
+                        <h2>Body Kits y Aerodinámica</h2>
+                        <p>Musculamos la línea estética para que imponga respeto. Desde modificaciones sutiles hasta
+                            conversiones a anchos extremos cortando y soldando chapa si es necesario.</p>
+                        <ul>
+                            <li>
+                                <span class="etiqueta-precio">2.500 € – 8.000 €</span>
+                                <strong>Instalación de widebody:</strong>
+                                Ensanches remachados o suavizados al chasis en fibra, carbono u originales metálicos.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">400 € – 1.200 €</span>
+                                <strong>Difusores y splitters:</strong>
+                                Piezas cortadas por CNC para aerodinámica que pega tu vehículo al pavimento.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">300 € – 1.500 €</span>
+                                <strong>Alerones deportivos GTR:</strong>
+                                Diseño GT, colas de pato y anclajes al chasis directo.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+                <!-- 5. Luces y rollos cyberpunk (RGB, underglow como en Need for Speed) -->
+                <article id="iluminacion" class="tarjeta-servicio tarjeta-cristal">
+                    <div class="imagen-servicio">
+                        <img src="https://img.freepik.com/fotos-premium/faro-coche-vista-macro-espacio-copia-lampara-led-o-xenon-primer-plano-ilustracion-3d-coche-moderno-prestigioso_161844-1189.jpg"
+                            alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    </div>
+                    <div class="info-servicio">
+                        <h2>Iluminación Neón y LED</h2>
+                        <p>La marca de la casa. Nuestra obsesión por el estilo retrowave se ve en el nivel de detalle
+                            de las luces que instalamos: sincronizadas e integradas como si salieran de fábrica en
+                            2077.</p>
+                        <ul>
+                            <li>
+                                <span class="etiqueta-precio">250 € – 800 €</span>
+                                <strong>Underglow dinámico:</strong>
+                                Chasis iluminado perimetralmente con colores reactivos por zonas.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">450 € – 3.000 €</span>
+                                <strong>Iluminación ambiental interior:</strong>
+                                Fibras ópticas y molduras LED por puertas y techo tipo Rolls-Royce.
+                            </li>
+                            <li>
+                                <span class="etiqueta-precio">150 € – 600 €</span>
+                                <strong>Personalización de faros:</strong>
+                                Ojos de demonio, halos grabados a láser y carcasas ahumadas.
+                            </li>
+                        </ul>
+                    </div>
+                </article>
+
+            </div>
+
+            <div style="text-align: center; margin-top: 5rem;">
+                <h2>¿Tienes un proyecto en mente?</h2>
+                <br>
+                <a href="contacto.html" class="boton-neon">Solicita Presupuesto</a>
+            </div>
+        </section>
+    </main>
+    <script src="js/pie-pagina.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

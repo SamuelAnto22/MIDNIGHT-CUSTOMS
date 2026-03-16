@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E36 Dark Widebody — BMW E36 Widebody Artesanal | Midnight Customs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/proyecto-vortex.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+</head>
+
+<body>
+
+    <a href="#contenido-principal" class="saltar-enlace"
+        style="position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:8px;z-index:2000;">
+        Saltar al contenido
+    </a>
+
+    <header class="cabecera-principal">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon-Photoroom.png" alt="Logotipo de Midnight Customs">
+                <span style="color:var(--color1);margin-right:5px;">Midnight</span><span
+                    style="color:var(--color2);">Customs</span>
+            </a>
+        </div>
+        <button class="boton-menu">☰</button>
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyectos.html" class="activo">Proyectos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <div class="contenedor-carga" id="loader">
+            <div class="girador-neon"></div>
+            <p>CARGANDO SISTEMAS...</p>
+        </div>
+
+        <!-- CABECERA DEL PROYECTO (Título y tal) -->
+        <div class="proyecto-cabecera">
+            <h1>E36 Dark Widebody</h1>
+            <p class="proyecto-subtitulo">BMW E36 Coupé · Widebody artesanal · Midnight Customs</p>
+        </div>
+
+        <!-- CARRUSEL DE FOTOS (He metido un montón de fotos para que se vea bien el curro) -->
+        <div class="carrusel-proyecto">
+            <div class="carrusel-ventana" id="carruselVentana">
+                <div class="carrusel-diapositiva activa">
+                    <img src="https://mlin.es/wp-content/uploads/2026/01/bmw-e36-tuning-wide-body-kit-1.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2026/01/BMW-E36-tuning-con-kit-wide-body-y-estetica-urbana-6.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2026/01/BMW-E36-tuning-con-kit-wide-body-y-estetica-urbana-9.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2026/01/bmw-e36-tuning-wide-body-kit-4.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2026/01/BMW-E36-tuning-con-kit-wide-body-y-estetica-urbana-10.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2026/01/BMW-E36-tuning-con-kit-wide-body-y-estetica-urbana-1.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <button class="carrusel-btn anterior" id="btnAnterior">&#8249;</button>
+                <button class="carrusel-btn siguiente" id="btnSiguiente">&#8250;</button>
+            </div>
+            <div class="carrusel-indicadores" id="carruselIndicadores"></div>
+            <div class="carrusel-miniaturas" id="carruselMiniaturas">
+                <img class="activa" src="https://mlin.es/wp-content/uploads/2026/01/bmw-e36-tuning-wide-body-kit-1.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2026/01/BMW-E36-tuning-con-kit-wide-body-y-estetica-urbana-6.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2026/01/BMW-E36-tuning-con-kit-wide-body-y-estetica-urbana-9.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2026/01/bmw-e36-tuning-wide-body-kit-4.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2026/01/BMW-E36-tuning-con-kit-wide-body-y-estetica-urbana-10.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2026/01/BMW-E36-tuning-con-kit-wide-body-y-estetica-urbana-1.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+            </div>
+        </div>
+
+        <!-- CUERPO: DESCRIPCIÓN + PRESUPUESTO -->
+        <div class="proyecto-cuerpo">
+
+            <!-- EL TEXTO TOCHO EXPLICANDO LO QUE LE HICIMOS AL BMW -->
+            <div class="proyecto-descripcion">
+                <h2>Visión del proyecto</h2>
+                <p>
+                    Hay coches que no envejecen. Este BMW E36 Coupé llegó a Midnight Customs con una sola premisa:
+                    convertirse en una máquina que impone respeto sin perder elegancia. Un widebody fabricado a mano,
+                    concebido sin atajos y sin compromisos. No hay remaches visibles. No hay piezas de catálogo
+                    estándar. Cada curva tiene nombre y apellidos.
+                </p>
+                <p>
+                    El resultado es un E36 que parece haber salido así de fábrica —solo que esa fábrica trabaja de
+                    noche, con neón violeta y perfeccionismo enfermizo.
+                </p>
+
+                <h3>Modificaciones realizadas</h3>
+                <ul class="lista-mods">
+                    <li>
+                        <strong>Widebody artesanal:</strong>
+                        Ensanches fabricados sobre la chapa original. Integración suavizada directamente sobre la
+                        carrocería sin remaches visibles; cada pieza se preparó, apareció y pintó junto al resto del
+                        cuerpo para que el resultado sea completamente homogéneo.
+                    </li>
+                    <li>
+                        <strong>Suspensión neumática (Airride):</strong>
+                        Kit completo con compresor, depósito y controlador digital desde el habitáculo. Permite bajar el
+                        coche al suelo para exhibición és y subir a altura de circulación normal en cuestión de
+                        segundos.
+                    </li>
+                    <li>
+                        <strong>Pintura iridiscente Purple-to-Cyan:</strong>
+                        Aplicada en cabina a pistola sobre toda la carrocería y los ensanches. El efecto camaleón cambia
+                        de morado profundo a cian eléctrico dependiendo del ángulo de la luz —ninguna fotografía lo
+                        recoge igual dos veces.
+                    </li>
+                    <li>
+                        <strong>Llantas multipieza forjadas:</strong>
+                        Juego de 17" delante y 18" detrás con offset agresivo diseñado a medida para el nuevo paso de
+                        rueda del widebody. Labio exterior pulido a espejo y barrilote pintado en negro mate.
+                    </li>
+                    <li>
+                        <strong>Underglow LED reactivo:</strong>
+                        Tiras LED perimetrales en la zona baja del chasis, sincronizadas por zonas. Color neón violeta
+                        por defecto; ajustables mediante app.
+                    </li>
+                    <li>
+                        <strong>Escape custom en titanio:</strong>
+                        Salidas dobles de 3" con válvulas electrónicas Valvetronic. Modo ciudad silencioso y modo sport
+                        con pop &amp; bang controlado.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- COLUMNA DE LA DERECHA (Presupuesto y esas cosas que duelen al bolsillo) -->
+            <div class="columna-lateral">
+
+                <!-- FICHA TÉCNICA -->
+                <div class="tarjeta-ficha">
+                    <h3>Ficha técnica</h3>
+                    <div class="ficha-dato">
+                        <span>Vehículo base</span>
+                        <span>BMW E36 Coupé</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Motor</span>
+                        <span>2.5i M52 (192 CV)</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Tipo de proyecto</span>
+                        <span>Estético + Stance</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Duración</span>
+                        <span>6 meses</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Estado</span>
+                        <span style="color:var(--color2);">Finalizado</span>
+                    </div>
+                </div>
+
+                <!-- PRESUPUESTO -->
+                <div class="tarjeta-presupuesto">
+                    <h3>Presupuesto del proyecto</h3>
+
+                    <div class="fila-presupuesto">
+                        <span>Widebody artesanal (fabricación + integración)</span>
+                        <span>5.800 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Pintura iridiscente (preparación + cabina)</span>
+                        <span>3.200 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Suspensión neumática Airride</span>
+                        <span>4.400 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Llantas multipieza forjadas (juego + montaje)</span>
+                        <span>3.800 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Underglow LED perimetral</span>
+                        <span>650 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Escape titanio con Valvetronic</span>
+                        <span>2.100 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Mano de obra y homologaciones</span>
+                        <span>1.950 €</span>
+                    </div>
+
+                    <div class="fila-total">
+                        <span>Total estimado</span>
+                        <span>21.900 €</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BOTONONES REDONDOS AL FINAL (Call to action se llaman) -->
+        <div class="proyecto-cta">
+            <a href="proyectos.html" class="boton-neon boton-secundario">← Volver a proyectos</a>
+            <a href="contacto.html" class="boton-neon">Solicitar presupuesto similar</a>
+        </div>
+
+    </main>
+
+
+    <script src="js/pie-pagina.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/proyecto-vortex.js"></script>
+</body>
+
+</html>

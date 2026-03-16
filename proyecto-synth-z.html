@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vito Full Custom — Mercedes Vito W638 | Midnight Customs</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/proyecto-synth-z.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+</head>
+
+<body>
+
+    <a href="#contenido-principal" class="saltar-enlace"
+        style="position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:8px;z-index:2000;">
+        Saltar al contenido
+    </a>
+
+    <header class="cabecera-principal">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon-Photoroom.png" alt="Logotipo de Midnight Customs">
+                <span style="color:var(--color1);margin-right:5px;">Midnight</span><span
+                    style="color:var(--color2);">Customs</span>
+            </a>
+        </div>
+        <button class="boton-menu">☰</button>
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyectos.html" class="activo">Proyectos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <div class="contenedor-carga" id="loader">
+            <div class="girador-neon"></div>
+            <p>CARGANDO SISTEMAS...</p>
+        </div>
+
+        <!-- CABECERA DEL PROYECTO (Título y tal) -->
+        <div class="proyecto-cabecera">
+            <h1>Vito Full Custom</h1>
+            <p class="proyecto-subtitulo">Mercedes Vito W638 · Custom integral · Midnight Customs</p>
+        </div>
+
+        <!-- CARRUSEL DE FOTOS (He metido un montón de fotos para que se vea bien el curro) -->
+        <div class="carrusel-proyecto">
+            <div class="carrusel-ventana" id="carruselVentana">
+                <div class="carrusel-diapositiva activa">
+                    <img src="https://mlin.es/wp-content/uploads/2022/11/MERCEDES-VITO-TUNING-BODY-KIT-FRENTE-min.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2022/11/MERCEDES-VITO-TUNING-BODY-KIT-TRASERA-REAR-min.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2022/11/LLANTAS-DAMNRAW-MERCEDES-VITO.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2022/11/LLANTAS-DAMNRAW-MERCEDES-VITO-19-PULGADAS.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2023/09/mercerdes-vito4.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2023/09/mercedes-vito-interior.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2022/11/MERCEDES-VITO-TUNING-BODY-KIT-ASIENTOS-RECARO-SPORTERS-min.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <div class="carrusel-diapositiva">
+                    <img src="https://mlin.es/wp-content/uploads/2022/11/MERCEDES-VITO-TUNING-BODY-KIT-VOLANTE-min.jpg"
+                        alt="Fotografía detallada del coche modificado en el taller">
+                </div>
+                <button class="carrusel-btn anterior" id="btnAnterior">&#8249;</button>
+                <button class="carrusel-btn siguiente" id="btnSiguiente">&#8250;</button>
+            </div>
+            <div class="carrusel-indicadores" id="carruselIndicadores"></div>
+            <div class="carrusel-miniaturas" id="carruselMiniaturas">
+                <img class="activa"
+                    src="https://mlin.es/wp-content/uploads/2022/11/MERCEDES-VITO-TUNING-BODY-KIT-FRENTE-min.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2022/11/MERCEDES-VITO-TUNING-BODY-KIT-TRASERA-REAR-min.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2022/11/LLANTAS-DAMNRAW-MERCEDES-VITO.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2022/11/LLANTAS-DAMNRAW-MERCEDES-VITO-19-PULGADAS.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2023/09/mercerdes-vito4.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2023/09/mercedes-vito-interior.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2022/11/MERCEDES-VITO-TUNING-BODY-KIT-ASIENTOS-RECARO-SPORTERS-min.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+                <img src="https://mlin.es/wp-content/uploads/2022/11/MERCEDES-VITO-TUNING-BODY-KIT-VOLANTE-min.jpg"
+                    alt="Fotografía detallada del coche modificado en el taller">
+            </div>
+        </div>
+
+        <!-- CUERPO: DESCRIPCIÓN + LATERAL -->
+        <div class="proyecto-cuerpo">
+
+            <!-- EL TEXTO TOCHO EXPLICANDO LO QUE LE HICIMOS A LA FURGO -->
+            <div class="proyecto-descripcion">
+                <h2>Visión del proyecto</h2>
+                <p>
+                    Una Mercedes Vito de 1999 no es el candidato obvio para una preparación de este nivel. Precisamente
+                    por eso este proyecto es especial. Un cliente con una idea clara, mucha personalidad y cero manía de
+                    hacer las cosas a medias llegó a Midnight Customs con una furgoneta que otros habrían descartado y
+                    una sola condición: que cuando saliera del taller, no hubiera nada igual.
+                </p>
+                <p>
+                    No la hubo. Lo que empezó como un cambio de llantas se convirtió en una transformación total
+                    —exterior, mecánica e interior— que tardó varios años en completarse, con el cliente añadiendo capa
+                    tras capa de personalización hasta convertir la Vito en un showcar de referencia.
+                </p>
+
+                <h3>Modificaciones realizadas</h3>
+                <ul class="lista-mods">
+                    <li>
+                        <strong>Widebody artesanal:</strong>
+                        Aletas fabricadas completamente a mano sobre la chapa original de la W638. Ensanches integrados
+                        y suavizados para que el ajuste parezca de fábrica. Cada aleta fue preparada, apareada y pintada
+                        junto al resto de la carrocería.
+                    </li>
+                    <li>
+                        <strong>Llantas DAMNRAW Bubble forjadas 3 piezas (10×19"):</strong>
+                        Neumáticos 255/35 R19. Offset agresivo diseñado específicamente para rellenar los nuevos pasos
+                        de rueda del widebody, con labio exterior pulido.
+                    </li>
+                    <li>
+                        <strong>Suspensión neumática Airlift V2 con gestión electrónica:</strong>
+                        Control total de la altura desde el interior. La Vito puede bajar a ras de suelo para exhibición
+                        estática y subir a altura de circulación sin apearse. Gestión por zonas (eje delantero
+                        y trasero independientes).
+                    </li>
+                    <li>
+                        <strong>Body kit completo:</strong>
+                        Paragolpes delantero, faldones laterales, paragolpes trasero, pestañas de faros y alerón de
+                        techo. Lip delantero y difusor trasero artesanales con detalles en rojo lacado. Kit lips de
+                        Carmen en laterales. Detalles en negro brillo: retrovisores, logos, molduras.
+                    </li>
+                    <li>
+                        <strong>Frenos TAROX 6 pistones (eje delantero y trasero):</strong>
+                        Discos ventilados, rayados y perforados. Latiguillos metálicos Goodridge. Bomba de freno de
+                        Mercedes Sprinter. Los soportes del eje trasero fueron fabricados a medida, ya que TAROX no
+                        fabrica kit para este modelo en el eje trasero.
+                    </li>
+                    <li>
+                        <strong>Reprogramación Stage 1:</strong>
+                        Optimización del mapa de inyección para mejorar la respuesta del motor diésel y el rendimiento
+                        general en todas las condiciones de uso.
+                    </li>
+                    <li>
+                        <strong>Escape Don silencioso dúplex tipo M01:</strong>
+                        Salida doble con sonido mejorado pero sin perder la homologación para circulación.
+                    </li>
+                    <li>
+                        <strong>Interior RECARO + tapizado completo en cuero:</strong>
+                        Asientos delanteros RECARO Sportster CS (la misma gama que montan Renault RS y Audi RS en sus
+                        versiones deportivas). Volante de Mercedes Clase C adaptado. Tapizado completo de todos los
+                        asientos con cuero, costuras y logos bordados en rojo. Cinturones en rojo. Pilares tapizados.
+                    </li>
+                    <li>
+                        <strong>Sistema de audio FOCAL (instalación AORROA Custom Audio):</strong>
+                        Equipo de sonido de alta fidelidad integrado por toda la furgoneta, con instalación profesional
+                        ocultando toda la electrónica en el maletero junto al compresor del Airlift.
+                    </li>
+                </ul>
+            </div>
+
+            <!-- COLUMNA DE LA DERECHA (Presupuesto y esas cosas que duelen al bolsillo) -->
+            <div class="columna-lateral">
+
+                <div class="tarjeta-ficha">
+                    <h3>Ficha técnica</h3>
+                    <div class="ficha-dato">
+                        <span>Vehículo base</span>
+                        <span>Mercedes Vito W638</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Año</span>
+                        <span>1999</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Motor</span>
+                        <span>2.2 CDI (diésel)</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Tipo de proyecto</span>
+                        <span>Exterior + Interior + Mecánica</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Duración</span>
+                        <span>+2 años (fases)</span>
+                    </div>
+                    <div class="ficha-dato">
+                        <span>Estado</span>
+                        <span style="color:var(--color2);">Finalizado</span>
+                    </div>
+                </div>
+
+                <div class="tarjeta-presupuesto">
+                    <h3>Presupuesto del proyecto</h3>
+
+                    <div class="fila-presupuesto">
+                        <span>Widebody artesanal (fabricación + integración)</span>
+                        <span>4.800 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Llantas DAMNRAW forjadas 3 piezas 19" (juego + montaje)</span>
+                        <span>4.200 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Suspensión neumática Airlift V2 con gestión electrónica</span>
+                        <span>3.900 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Body kit + lip + difusor artesanal + detalles</span>
+                        <span>2.600 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Frenos TAROX 6P delantero + trasero (soportes a medida)</span>
+                        <span>3.400 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Reprogramación Stage 1 + escape dúplex</span>
+                        <span>1.100 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Interior RECARO + tapizado cuero integral + volante</span>
+                        <span>4.500 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Sistema de audio FOCAL (instalación incluida)</span>
+                        <span>3.800 €</span>
+                    </div>
+                    <div class="fila-presupuesto">
+                        <span>Mano de obra, ajustes y homologaciones</span>
+                        <span>2.200 €</span>
+                    </div>
+
+                    <div class="fila-total">
+                        <span>Total estimado</span>
+                        <span>30.500 €</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BOTONONES REDONDOS AL FINAL (Call to action se llaman) -->
+        <div class="proyecto-cta">
+            <a href="proyectos.html" class="boton-neon boton-secundario">← Volver a proyectos</a>
+            <a href="contacto.html" class="boton-neon">Solicitar presupuesto similar</a>
+        </div>
+    </main>
+
+
+    <script src="js/pie-pagina.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/proyecto-synth-z.js"></script>
+</body>
+
+</html>

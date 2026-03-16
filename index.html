@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- Declaración del tipo de documento, indica al navegador que es HTML5 -->
+<html lang="es">
+<!-- Etiqueta raíz del documento definiendo el idioma español ('es') -->
+
+<head>
+    <!-- Configuración que no se ve en pantalla, metadatos y enlaces -->
+    <meta charset="UTF-8">
+    <!-- Super importante el UTF-8 para que las eñes y las tildes no salgan con símbolos raritos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Esto lo pongo para que se vea bien en los móviles y no salga todo chiquitito -->
+    <title>Midnight Customs | Inicio</title>
+    <!-- Esto es lo que pone en la pestaña de arriba o si buscas en Google -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Cargo mi CSS tocho donde muevo todo -->
+    <link rel="stylesheet" href="css/animaciones.css">
+    <!-- Aquí tengo aparte los keyframes y las animaciones para no ensuciar el de arriba -->
+</head>
+
+<body>
+    <!-- Aquí empieza el salseo de la web. Lo que ve el usuario -->
+
+    <a href="#contenido-principal" class="saltar-enlace"
+        style="position: absolute; top: -40px; left: 0; background: #000; color: #fff; padding: 8px; z-index: 2000;">Saltar
+        al contenido</a>
+    <!-- Un truquillo de accesibilidad. Este botón está escondido para la gente normal pero sirve para saltarse el menú si usas lector de pantalla -->
+
+    <header class="cabecera-principal">
+        <!-- El bloque de arriba con el logo y el menú donde encajo todo el flex -->
+        <div class="logo">
+            <!-- Pongo un enlace en el logo para que te lleve a la página de inicio, super útil -->
+            <a href="index.html">
+                <!-- La imagen de mi logo, le he quitado el fondo -->
+                <img src="assets/icon-Photoroom.png" alt="Logotipo de Midnight Customs">
+                <!-- Uso span para poder pintar cada palabra de un color de las variables chulas -->
+                <span style="color:var(--color1); margin-right: 5px;">Midnight</span><span
+                    style="color:var(--color2);">Customs</span>
+            </a>
+        </div>
+
+        <button class="boton-menu">
+            <!-- Este simbolito raro es el menú hamburguesa de los móviles, lo pillo de internet copiar y pegar -->
+            ☰
+        </button>
+
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <!-- La lista de links del menú, lo meto en un nav semántico por si Sonia lo revisa -->
+            <ul>
+                <!-- La clase 'activo' la uso para pintar de que estamos en esta sección -->
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <!-- Main: la etiqueta gorda donde va la chicha de cada página individual -->
+        <section class="portada">
+            <!-- La intro que ocupa toda la pantalla que se llama Hero Section -->
+            <!-- PANTALLA DE CARGA (Loader) -->
+            <div class="contenedor-carga" id="loader">
+                <!-- La pantalla negra con las letras esa de cyberpunk que tarda un poco al principio y se quita con JS -->
+                <div class="girador-neon"></div>
+                <!-- El circulito dando vueltas -->
+                <p>CARGANDO SISTEMAS...</p>
+                <!-- Me sobraba poner 'Loading...' y le di un toque guapo rollo hacker -->
+            </div>
+
+            <div class="contenido-portada">
+                <!-- La caja del medio con las cosas centradas -->
+                <div class="contenedor-logo">
+                    <!-- Escondo el H1 con CSS para el SEO pero dejo la imagen tocha visible -->
+                    <h1 class="visualmente-oculto" id="titulo-portada">Midnight Customs</h1>
+                    <!-- Aquí pongo el logo de nuevo pero en plan gigante brillando -->
+                    <img src="assets/icon-Photoroom.png" class="logo-principal" alt="Logotipo gigante de la empresa">
+                </div>
+                <!-- Una frase molona que se me ha ocurrido dividida en dos líneas -->
+                <p class="lema-portada">
+                    <span class="lema-linea">No creamos sueños.</span>
+                    <span class="lema-linea lema-destaque">Los cumplimos.</span>
+                </p>
+                <!-- Un pedazo de botón que te manda volando a mis servicios -->
+                <a href="servicios.html" class="boton-neon lema-cta">Descubre cómo</a>
+            </div>
+
+        </section>
+
+        <section class="servicios-inicio">
+            <!-- Sección secundaria en la página de inicio que muestra un resumen de los servicios -->
+            <div class="titulo-seccion">
+                <!-- Título general de esta parte -->
+                <h2 id="titulo-servicios-inicio">Nuestros Servicios</h2>
+            </div>
+            <div class="cuadricula cuadricula-fila">
+                <!-- Contenedor CSS Grid o Flexbox para alinear todas las tarjetas -->
+                <!-- 1. Primer servicio destacado -->
+                <a href="servicios.html#vinilado" class="tarjeta-cristal tarjeta-servicio-inicio">
+                    <img src="https://www.areagraficadigital.es/images/galeria/o_1i1nc183j15sh32nhtk1bstboi1b.jpg"
+                        alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    <h3>Vinilado y pintura</h3>
+                    <p>Vinilos premium: mate, satinado, iridiscente o cromo.</p>
+                    <span class="tarjeta-enlace">Descubre más <span class="tarjeta-flecha">→</span></span>
+                </a>
+                <!-- 2. Segundo servicio destacado -->
+                <a href="servicios.html#motor" class="tarjeta-cristal tarjeta-servicio-inicio">
+                    <img src="https://cdn-s3.clubcorsavenezuela.com/original/2X/2/27e2b4d98a789cc7977b870dec0270fba0228314.jpeg"
+                        alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    <h3>Potenciación Motor</h3>
+                    <p>Reprogramación ECU, escapes custom y turbinas híbridas.</p>
+                    <span class="tarjeta-enlace">Descubre más <span class="tarjeta-flecha">→</span></span>
+                </a>
+                <!-- 3. Tercer servicio destacado -->
+                <a href="servicios.html#llantas" class="tarjeta-cristal tarjeta-servicio-inicio">
+                    <img src="https://i.pinimg.com/736x/15/1a/81/151a819607a890b1aaa6b0c41cce7d92.jpg"
+                        alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    <h3>Llantas personalizadas</h3>
+                    <p>Airride, llantas forjadas y geometría a medida.</p>
+                    <span class="tarjeta-enlace">Descubre más <span class="tarjeta-flecha">→</span></span>
+                </a>
+                <!-- 4. Cuarto servicio destacado -->
+                <a href="servicios.html#bodykits" class="tarjeta-cristal tarjeta-servicio-inicio">
+                    <img src="https://img.interempresas.net/fotos/2086977.jpeg"
+                        alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    <h3>Body Kits</h3>
+                    <p>Widebody, splitters, difusores y alerones GTR.</p>
+                    <span class="tarjeta-enlace">Descubre más <span class="tarjeta-flecha">→</span></span>
+                </a>
+                <!-- 5. Quinto servicio destacado -->
+                <a href="servicios.html#iluminacion" class="tarjeta-cristal tarjeta-servicio-inicio">
+                    <img src="https://img.freepik.com/fotos-premium/faro-coche-vista-macro-espacio-copia-lampara-led-o-xenon-primer-plano-ilustracion-3d-coche-moderno-prestigioso_161844-1189.jpg"
+                        alt="Imagen ilustrativa de nuestros servicios de personalización">
+                    <h3>Iluminación LED</h3>
+                    <p>Underglow, ambient lighting y faros personalizados.</p>
+                    <span class="tarjeta-enlace">Descubre más <span class="tarjeta-flecha">→</span></span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+    <!-- Meto aquí el script que hace que aparezca el footer en todas las páginas sin picarlo a mano -->
+    <script src="js/pie-pagina.js"></script>
+    <!-- Y este el script normal con mis movidas de animaciones, menús y tal -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

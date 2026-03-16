@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros | Midnight Customs — El equipo detrás de la leyenda</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/nosotros.css">
+    <link rel="stylesheet" href="css/animaciones.css">
+</head>
+
+<body>
+
+    <a href="#contenido-principal" class="saltar-enlace"
+        style="position:absolute;top:-40px;left:0;background:#000;color:#fff;padding:8px;z-index:2000;">
+        Saltar al contenido
+    </a>
+
+    <header class="cabecera-principal">
+        <div class="logo">
+            <a href="index.html">
+                <img src="assets/icon-Photoroom.png" alt="Logotipo de Midnight Customs">
+                <span style="color:var(--color1);margin-right:5px;">Midnight</span><span
+                    style="color:var(--color2);">Customs</span>
+            </a>
+        </div>
+        <button class="boton-menu">☰</button>
+        <nav class="navegacion-principal" id="navegacion-principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
+                <li><a href="proyectos.html">Proyectos</a></li>
+                <li><a href="nosotros.html" class="activo">Nosotros</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido-principal">
+        <div class="contenedor-carga" id="loader">
+            <div class="girador-neon"></div>
+            <p>CARGANDO SISTEMAS...</p>
+        </div>
+
+        <section>
+            <div class="titulo-seccion">
+                <h1 id="titulo-nosotros">Sobre Nosotros</h1>
+            </div>
+
+            <!-- ====== EL VÍDEO DE CABECERA (Ahora sí que tenemos vídeo propio) ====== -->
+            <div class="hero-video">
+                <div class="video-wrapper" id="videoWrapper" tabindex="0">
+                    <video id="videoPromo" controls width="100%" style="display:none;">
+                        <source src="assets/video.mp4" type="video/mp4">
+                        <p>Tu navegador no soporta el elemento de vídeo. Por favor, actualízalo.</p>
+                    </video>
+
+                    <!-- La capa oscura que le pongo por encima al vídeo para que quede el botón custom gigante -->
+                    <div class="video-overlay" id="videoOverlay">
+                        <div class="btn-play">▶</div>
+                        <div class="video-caption">
+                            <strong>Midnight Customs</strong>
+                            <p>Reproducir presentación del taller</p>
+                        </div>
+                    </div>
+
+                    <!-- Pongo el video pausado de fondo muy bajito para que decore el overlay -->
+                    <video autoplay muted loop playsinline
+                        style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;opacity:0.4;">
+                        <source src="assets/video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <!-- ====== SECCIÓN DE CHARLA: Qué somos y algunos números inventados para vacilar ====== -->
+            <div class="seccion-filosofia">
+                <div class="bloque-filosofia">
+                    <h2>La Filosofía Midnight</h2>
+                    <p>
+                        Midnight Customs nació de la misma pasión que empuja a un mecánico a quedarse en el taller
+                        hasta las tres de la madrugada: no por obligación, sino porque el proyecto lo exige.
+                        No hacemos mantenimientos ni cambiamos filtros. Creamos máquinas que generan miradas,
+                        respeto y conversación allá donde aparecen.
+                    </p>
+                    <p>
+                        Nuestro proceso es artesano: cada pieza se mide, se prueba y se ajusta a mano antes de
+                        instalarse. Trabajamos con los mejores materiales del mercado —fibra de carbono real,
+                        pintura de cabina, frenos de competición— porque nuestros clientes no aceptan menos.
+                        Y nosotros tampoco.
+                    </p>
+                    <p>
+                        No creamos monstruos en serie. Cada proyecto es único, irrepetible, y lleva la firma
+                        de quien lo construyó. Eso no tiene precio. Pero sí tiene presupuesto.
+                    </p>
+                </div>
+
+                <div class="cuadricula-stats">
+                    <div class="caja-estadistica">
+                        <h4>+80</h4>
+                        <p>Proyectos completados</p>
+                    </div>
+                    <div class="caja-estadistica">
+                        <h4>12</h4>
+                        <p>Años de experiencia</p>
+                    </div>
+                    <div class="caja-estadistica">
+                        <h4>7</h4>
+                        <p>Premios de diseño</p>
+                    </div>
+                    <div class="caja-estadistica">
+                        <h4>100%</h4>
+                        <p>Pura pasión</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====== NUESTRA GENTE (Fotos de Unsplash porque no nos queríamos hacer fotos) ====== -->
+            <div class="seccion-equipo">
+                <div class="titulo-seccion">
+                    <h2 style="color:var(--color1);">Nuestro Equipo</h2>
+                </div>
+
+                <div class="cuadricula-equipo">
+
+                    <!-- 1 — Yo mismo (El Jefe) -->
+                    <article class="tarjeta-cristal tarjeta-equipo">
+                        <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=400&q=80"
+                            alt="Fotografía de un miembro del equipo de Midnight Customs">
+                        <h3>Diego Martín García</h3>
+                        <div class="cargo-equipo">CEO &amp; Fundador</div>
+                        <p>La mente detrás de Midnight Customs. Cada proyecto que sale por la puerta lleva su visión, su
+                            firma y sus estándares imposibles de bajar.</p>
+                    </article>
+
+                    <!-- 2 — El colega Izan que controla de pintura -->
+                    <article class="tarjeta-cristal tarjeta-equipo">
+                        <img src="https://images.unsplash.com/photo-1540569014015-19a7be504e3a?auto=format&fit=crop&w=400&q=80"
+                            alt="Fotografía de un miembro del equipo de Midnight Customs">
+                        <h3>Izan</h3>
+                        <div class="cargo-equipo">Maestro pintor</div>
+                        <p>Pinturas iridiscentes, camaleón, vinilos cromo y acabados que cambian de color con la luz. Si
+                            existe, Izan lo mezcla y lo aplica.</p>
+                    </article>
+
+                    <!-- 3 — Adrián partiendo chapa -->
+                    <article class="tarjeta-cristal tarjeta-equipo">
+                        <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=400&q=80"
+                            alt="Fotografía de un miembro del equipo de Midnight Customs">
+                        <h3>Adrián López</h3>
+                        <div class="cargo-equipo">Chapista</div>
+                        <p>Escultor de carrocerías. Widebody artesanal, integración de body kits y pasos de rueda
+                            abiertos con precisión de relojero.</p>
+                    </article>
+
+                    <!-- 4 — El pobre chaval nuevo que recoge todo -->
+                    <article class="tarjeta-cristal tarjeta-equipo">
+                        <img src="https://images.unsplash.com/photo-1534308143481-c55f00be8bd7?auto=format&fit=crop&w=400&q=80"
+                            alt="Fotografía de un miembro del equipo de Midnight Customs">
+                        <h3>Samuel</h3>
+                        <div class="cargo-equipo">Mozo mecánico</div>
+                        <p>El primero en llegar y el último en salir. Cambios de ruedas, montajes y todo lo que hay que
+                            hacer para que los demás puedan trabajar a tope.</p>
+                    </article>
+
+                    <!-- 5 — Experto Lunas -->
+                    <article class="tarjeta-cristal tarjeta-equipo">
+                        <img src="data:image/jpeg;base64,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"
+                            alt="Imagen ilustrativa de nuestros servicios de personalización">
+                        <h3>Joseba</h3>
+                        <div class="cargo-equipo">Experto en lunas</div>
+                        <p>Instalación de lunas, vinilado de techos y parasoles personalizados. Trabaja el cristal con
+                            una precisión que haría llorar a Carglass de envidia.</p>
+                    </article>
+
+                    <!-- 6 — Mecánico -->
+                    <article class="tarjeta-cristal tarjeta-equipo">
+                        <img src="https://cs2.gtaall.net/screenshots/d9802/2021-05/original/a9146e5c6d9f9ebb9fa4bcff0ccd56968831d42e/914018-gallery10.jpg"
+                            alt="Fotografía de un miembro del equipo de Midnight Customs">
+                        <h3>Dan</h3>
+                        <div class="cargo-equipo">Mecánico</div>
+                        <p>Con tantas horas de taller encima, podría cambiar un motor con los ojos cerrados. Dice que
+                            aprendió en el GTA. Los coches que repara no lo ponen en duda.</p>
+                    </article>
+
+                    <!-- 7 — Electrónica (inventado) -->
+                    <article class="tarjeta-cristal tarjeta-equipo">
+                        <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+                            alt="Fotografía de un miembro del equipo de Midnight Customs">
+                        <h3>Rubén Castillo</h3>
+                        <div class="cargo-equipo">Especialista en electrónica</div>
+                        <p>Underglow, centralitas, valvetronic y sistemas de audio integrados. El cerebro digital de
+                            cada proyecto sale de sus manos.</p>
+                    </article>
+
+                    <!-- 8 — Diseño 3D (inventado) -->
+                    <article class="tarjeta-cristal tarjeta-equipo">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=400&q=80"
+                            alt="Fotografía de un miembro del equipo de Midnight Customs">
+                        <h3>Laura Gómez</h3>
+                        <div class="cargo-equipo">Diseño y visualización 3D</div>
+                        <p>Da forma al proyecto antes de tocar la chapa. Renders hiperrealistas para que el cliente sepa
+                            exactamente qué recibirá antes de dar el visto bueno.</p>
+                    </article>
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+    <script src="js/pie-pagina.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/nosotros.js"></script>
+</body>
+
+</html>
